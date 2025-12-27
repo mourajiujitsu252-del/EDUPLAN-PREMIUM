@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EduPlan Ultra | IA Nível GPT-4 para BNCC</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="O assistente de IA pedagógica mais potente do mercado. Agora com motor de raciocínio nível GPT-4, 100% gratuito para professores.">
+    <meta name="keywords" content="BNCC, professor, plano de aula, GPT-4 grátis, inteligência artificial, educação, word, pdf, slides">
+    
+    <!-- Social Media Meta Tags (Open Graph) -->
+    <meta property="og:title" content="EduPlan Ultra - Inteligência Superior para Professores">
+    <meta property="og:description" content="Gere planos de aula magistrais com IA de raciocínio profundo. 100% alinhado à BNCC 2025.">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3429/3429149.png">
+    <meta property="og:type" content="website">
+
+    <!-- PWA Primary Meta Tags -->
+    <meta name="theme-color" content="#020617">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="EduPlan Ultra">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3429/3429149.png">
+    <link rel="manifest" href="manifest.json">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #020617;
+            --primary-light: #0f172a;
+            --accent: #f59e0b;
+            --bg-pearl: #f8fafc;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-pearl);
+            overflow-x: hidden;
+            color: #1e293b;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        .aurora-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 10% 10%, rgba(79, 70, 229, 0.1) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 90%, rgba(245, 158, 11, 0.05) 0%, transparent 40%);
+            background-color: var(--bg-pearl);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 40px -10px rgba(15, 23, 42, 0.1);
+        }
+
+        .btn-elegant {
+            background: var(--primary);
+            color: white;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-elegant:hover {
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 20px 40px -10px rgba(2, 6, 23, 0.3);
+        }
+
+        .input-elegant {
+            background: #fff;
+            border: 1.5px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .input-elegant:focus {
+            border-color: var(--primary);
+            background: #fff;
+            box-shadow: 0 0 0 4px rgba(2, 6, 23, 0.05);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 20px;
+        }
+
+        [contenteditable]:empty:before {
+            content: attr(data-placeholder);
+            color: #94a3b8;
+            pointer-events: none;
+            display: block;
+        }
+
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+        }
+        .animate-pulse-soft { animation: pulse-soft 3s ease-in-out infinite; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "jspdf": "https://esm.sh/jspdf@^3.0.4",
+    "docx": "https://esm.sh/docx@^9.5.1",
+    "pptxgenjs": "https://esm.sh/pptxgenjs@^4.0.1",
+    "html-to-image": "https://esm.sh/html-to-image@^1.11.11"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased selection:bg-slate-900 selection:text-white">
+    <div class="aurora-bg"></div>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

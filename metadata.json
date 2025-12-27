@@ -1,0 +1,8 @@
+{
+  "name": "EduPlan Pro - BNCC",
+  "description": "Plataforma profissional para criação de planos de aula e currículos anuais automatizados com IA, 100% alinhados à BNCC.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
