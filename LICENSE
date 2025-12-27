@@ -1,0 +1,4 @@
+git clone https://github.com/seu-usuario/eduplan-pro.git
+npm install
+API_KEY= gen-lang-client-0727808997
+npm start
